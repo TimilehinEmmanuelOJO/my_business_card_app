@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -82,12 +84,11 @@ class MyApp extends StatelessWidget {
                   child: ListTile(
                     leading: Icon(
                       Icons.alternate_email,
-                      color: Colors.teal,
+                      color: Colors.teal.shade500,
                     ),
                     title: Text('ojo_timi',
                       style: TextStyle(
                           fontSize: 25,
-                          fontFamily: 'Source Sans Pro',
                           color: Colors.teal.shade900
                       ),
                     ),
