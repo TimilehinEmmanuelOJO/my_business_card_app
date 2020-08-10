@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
               children: <Widget>[
                 CircleAvatar(
                   radius: 50.0,
-                  backgroundImage: AssetImage('images/IMG_0272.JPG'),
+                  backgroundImage: AssetImage('image/timi.JPG'),
                 ),
                 Text(
                   'Timilehin Emmanuel OJO',
@@ -46,17 +46,18 @@ class MyApp extends StatelessWidget {
                     color: Colors.teal.shade100,
                   ),
                 ),
-                Card(
-                    margin: EdgeInsets.symmetric(vertical: 6.0, horizontal: 25.0),
+                Container(
+                  color: Colors.white,
+                    margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                     child: ListTile(
                       leading: Icon(
                         Icons.phone,
-                        color: Colors.teal,
+                        color: Colors.blueGrey,
                       ),
                       title: Text(
                         '+234 8163393738',
                         style: TextStyle(
-                          color: Colors.teal.shade900,
+                          color: Colors.blueGrey,
                           fontFamily: 'Source Sans Pro',
                           fontSize: 20.0,
                         ),
@@ -68,36 +69,48 @@ class MyApp extends StatelessWidget {
                   child: ListTile(
                     leading: Icon(
                       Icons.email,
-                      color: Colors.teal,
+                      color: Colors.blueGrey,
                     ),
                     title: Text(
                       'timilehin175@gmail.com',
                       style: TextStyle(
                           fontSize: 20.0,
-                          color: Colors.teal.shade900,
+                          color: Colors.blueGrey,
                           fontFamily: 'Source Sans Pro'),
                     ),
                   ),
                 ),
-                Card(
-                  margin: EdgeInsets.symmetric(vertical: 5, horizontal: 25),
-                  child: ListTile(
-                    leading: Icon(
-                      Icons.alternate_email,
-                      color: Colors.teal.shade500,
+                Container(
+                  margin: EdgeInsets.all(10),
+                  width: 360,
+                    height:60 ,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
                     ),
-                    title: Text('ojo_timi',
-                      style: TextStyle(
-                          fontSize: 25,
-                          color: Colors.teal.shade900
+                  child: Row(
+                    children: <Widget>[
+                      SizedBox(
+                        width: 15,
                       ),
-                    ),
+                      Image(
+                        image: AssetImage('image/twitter.png'),
+                        color: Colors.blueGrey,
+                        width: 27,
+                      ),
+                      SizedBox(width: 30,),
+                      Text('ojo_timi',
+                          style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.blueGrey,
+                          fontFamily: 'Source Sans Pro'),
+                      ),
+                    ],
                   ),
-                ),
-              ],
+                  ),
+                ],
+            ),
             ),
         ),
-      ),
-    );
+      );
   }
 }
