@@ -95,7 +95,7 @@ class MyApp extends StatelessWidget {
                       Image(
                         image: AssetImage('image/twitter.png'),
                         color: Colors.blueGrey,
-                        width: 27,
+                        width: 28,
                       ),
                       SizedBox(width: 30,),
                       Text('ojo_timi',
