@@ -60,6 +60,7 @@ class MyApp extends StatelessWidget {
                           color: Colors.blueGrey,
                           fontFamily: 'Source Sans Pro',
                           fontSize: 20.0,
+                          fontWeight: FontWeight.bold
                         ),
                       ),
                     ),
@@ -76,6 +77,7 @@ class MyApp extends StatelessWidget {
                       style: TextStyle(
                           fontSize: 20.0,
                           color: Colors.blueGrey,
+                          fontWeight: FontWeight.bold,
                           fontFamily: 'Source Sans Pro'),
                     ),
                   ),
@@ -102,7 +104,8 @@ class MyApp extends StatelessWidget {
                           style: TextStyle(
                           fontSize: 20.0,
                           color: Colors.blueGrey,
-                          fontFamily: 'Source Sans Pro'),
+                          fontFamily: 'Source Sans Pro',
+                          fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),
